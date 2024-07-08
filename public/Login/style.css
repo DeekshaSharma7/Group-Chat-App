@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #3498db, #9b59b6);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-container {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px;
+}
+
+.login-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #1a237e;
+}
+
+.input-field {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-button {
+  background-color: #00796b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button {
+  display: inline-block;
+  background-color: #4a148c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.signup-button:hover {
+  background-color: #6a1b9a; /* Darker purple on hover */
+}
+
+.forget-button {
+  background-color: #ccc;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.forget-button:hover {
+  background-color: #b0bec5;
+}
+
+.login-button:hover {
+  background-color: #004d40;
+}
+
+#status-label {
+  font-size: 14px;
+  color: #ff5722; /* Orange color for status label */
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .input-field,
+  .login-button,
+  .signup-button,
+  .forget-button {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .login-container h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .input-field,
+  .login-button,
+  .signup-button,
+  .forget-button {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .login-container h1 {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,348 @@
+/* Add this CSS to display the list horizontally */
+.join-button {
+  background-color: #00796b; /* Specify the background color you want */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 10px;
+  margin: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #004d40; /* Button background color on hover */
+}
+.edit-button {
+  background-color: #f57f17; /* Specify the background color you want */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 10px;
+  margin: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #ffb300; /* Button background color on hover */
+}
+
+.custom-button {
+  background-color: #007bff; /* Specify the background color you want */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 10px;
+  margin: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/*.custom-button:hover {
+  background-color: #1565c0; /* Button background color on hover 
+}*/
+
+.create-button {
+  background-color: #4a148c; /* Specify the background color you want */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 10px;
+  margin: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-button:hover {
+  background-color: #6a1b9a; /* Button background color on hover */
+}
+
+.global-button {
+  background-color: #3e2723; /* Specify the background color you want */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 10px;
+  margin: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.global-button:hover {
+  background-color: #5d4037; /* Button background color on hover */
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px; /* Center the content horizontally */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.horizontal-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox to arrange items horizontally */
+  flex-wrap: wrap;
+}
+
+.horizontal-list li {
+  margin-right: 5px; /* Add spacing between items */
+}
+
+/* Optional: Remove margin from the last item */
+.horizontal-list li:last-child {
+  margin-right: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #3498db, #9b59b6);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #1a237e;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Space between title and logout button */
+  align-items: center;
+}
+
+header h1 {
+  flex-grow: 1; /* Allow title to grow and occupy space */
+  font-size: 24px;
+  margin: 0;
+}
+
+.global-button,
+.create-button,
+.join-button,
+.edit-button,
+.custom-button {
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.logout-button {
+  background-color: #ff5722; /* Red color for logout button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #e64a19; /* Darker red on hover */
+}
+
+main {
+  /* flex-grow: 1;  Grow to fill available space */
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  max-height: 500px;
+  width: 100%;
+  border-radius: 10px;
+  max-width: 90%; /* 50% of the viewport width */
+  margin: 0 auto; /* Center horizontally */
+  overflow-y: auto; /* Enable scrolling for the chat messages */
+  background-color: #f1f1f1; /* Background color for the main content area */
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column; /* Reverse the order of messages */
+  align-items: flex-end; /* Align messages to the left */
+  width: 100%;
+}
+
+.message {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.odd {
+  background-color: #bbdefb;
+  align-self: flex-start;
+}
+
+.even {
+  background-color: #e3f2fd;
+  align-self: flex-end;
+}
+
+footer {
+  background-color: #f1f1f1;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Distribute space between elements */
+  align-items: center; /* Vertically center elements */
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 2px;
+}
+
+/* Style the custom file input container */
+.custom-file-input {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/* Style the actual file input */
+.input-file {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+/* Style the custom button or label */
+.custom-button {
+  background-color: #1e88e5;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Optional: Add hover and active styles */
+.custom-button:hover {
+  background-color: #1565c0;
+}
+
+.custom-button:active {
+  background-color: #1c6ca2;
+}
+
+#inputLink {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.group-name-label {
+  background-color: rgb(185, 183, 183);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 90%;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  .global-button,
+  .create-button,
+  .join-button,
+  .edit-button,
+  .custom-button {
+    padding: 8px 10px;
+  }
+
+  input[type="text"] {
+    padding: 8px;
+  }
+
+  button {
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    width: 100%;
+    padding: 5px;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+
+  .global-button,
+  .create-button,
+  .join-button,
+  .edit-button,
+  .custom-button {
+    padding: 6px 8px;
+  }
+
+  input[type="text"] {
+    padding: 6px;
+  }
+
+  button {
+    padding: 6px 10px;
+  }
+}
+
+
+/* Add this to your style.css */
+
+.message-container {
+  height: 400px; /* Adjust the height as needed */
+  overflow-y: auto; /* Enables vertical scrolling */
+  padding: 10px; /* Optional: Add padding for better appearance */
+  border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+  background-color: #f9f9f9; /* Optional: Background color */
+}
+
+.message {
+  margin-bottom: 10px; /* Space between messages */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message.odd {
+  background-color: #e1f5fe; /* Color for odd messages */
+}
+
+.message.even {
+  background-color: #fff; /* Color for even messages */
+}

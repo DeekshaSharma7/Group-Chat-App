@@ -1,0 +1,196 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #4caf50;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.member-list {
+  margin-top: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.limember {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.limember:hover {
+  background-color: #f9f9f9;
+}
+
+.member-name {
+  flex: 1;
+  text-align: left;
+  color: #555;
+}
+
+.member-role {
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.admin {
+  background-color: #ff5722;
+}
+
+.member {
+  background-color: #03a9f4;
+}
+
+.button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.button.promote {
+  background-color: #43c76f;
+}
+
+.button.demote {
+  background-color: #d4803a;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.remove-button {
+  background-color: #dc3545;
+  /*color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px;*/
+}
+.promote-button {
+  background-color: #43c76f;
+  /*color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px;*/
+}
+
+.demote-button {
+  background-color: #d4803a;
+  /* color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px;*/
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.label-status {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.dassboard-button {
+  background-color: #2196f3; /* Specify the background color you want */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dassboard-button:hover {
+  background-color: #1e88e5; /* Button background color on hover */
+}
+
+@media (max-width: 768px) {
+  main {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .limember {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .button {
+    margin: 5px 0;
+  }
+
+  .member-name,
+  .member-role {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 18px;
+  }
+
+  .limember {
+    padding: 5px;
+  }
+
+  .button {
+    padding: 5px;
+  }
+
+  .dassboard-button {
+    padding: 8px 15px;
+  }
+}
